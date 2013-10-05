@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131005023413) do
+ActiveRecord::Schema.define(version: 20131005233242) do
 
   create_table "cards", force: true do |t|
     t.string   "title"
@@ -31,8 +31,25 @@ ActiveRecord::Schema.define(version: 20131005023413) do
   add_index "cards", ["status_id"], name: "index_cards_on_status_id", using: :btree
   add_index "cards", ["type_id"], name: "index_cards_on_type_id", using: :btree
 
+  create_table "columns", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "limit"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "importances", force: true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "service_classes", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "image"
+    t.integer  "limit"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
