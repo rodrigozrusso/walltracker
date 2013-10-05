@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @card.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @card.description %>
+</p>
+
+<p>
+  <strong>Acceptance description:</strong>
+  <%= @card.acceptance_description %>
+</p>
+
+<p>
+  <strong>Priority order:</strong>
+  <%= @card.priority_order %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @card.parent %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @card.status %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @card.type %>
+</p>
+
+<p>
+  <strong>Importance:</strong>
+  <%= @card.importance %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

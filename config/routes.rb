@@ -1,4 +1,6 @@
 Walltracker::Application.routes.draw do
+  resources :cards
+
   resources :importances
 
   resources :types

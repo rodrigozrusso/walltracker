@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyString
+  acceptance_description: MyString
+  priority_order: 1
+  parent_id: 
+  status_id: 
+  type_id: 
+  importance_id: 
+
+two:
+  title: MyString
+  description: MyString
+  acceptance_description: MyString
+  priority_order: 1
+  parent_id: 
+  status_id: 
+  type_id: 
+  importance_id: 
