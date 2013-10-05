@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @service_class.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @service_class.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @service_class.image %>
+</p>
+
+<p>
+  <strong>Limit:</strong>
+  <%= @service_class.limit %>
+</p>
+
+<%= link_to 'Edit', edit_service_class_path(@service_class) %> |
+<%= link_to 'Back', service_classes_path %>

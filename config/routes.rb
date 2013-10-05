@@ -1,4 +1,6 @@
 Walltracker::Application.routes.draw do
+  resources :service_classes
+
   get "welcome/index"
   resources :cards
 

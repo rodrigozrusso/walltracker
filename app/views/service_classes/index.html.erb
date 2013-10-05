@@ -1,0 +1,33 @@
+<h1>Listing service_classes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th>Limit</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @service_classes.each do |service_class| %>
+      <tr>
+        <td><%= service_class.name %></td>
+        <td><%= service_class.description %></td>
+        <td><%= service_class.image %></td>
+        <td><%= service_class.limit %></td>
+        <td><%= link_to 'Show', service_class %></td>
+        <td><%= link_to 'Edit', edit_service_class_path(service_class) %></td>
+        <td><%= link_to 'Destroy', service_class, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Service class', new_service_class_path %>
