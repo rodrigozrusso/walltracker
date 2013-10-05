@@ -1,7 +1,7 @@
-== README
+== Card Wall Tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+{<img src="https://travis-ci.org/rodrigozrusso/walltracker.png" />}[https://travis-ci.org/rodrigozrusso/walltracker]
+
 
 Things you may want to cover:
 
