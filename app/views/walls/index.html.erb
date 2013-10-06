@@ -1,0 +1,31 @@
+<h1>Listing walls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Column</th>
+      <th>Service class</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @walls.each do |wall| %>
+      <tr>
+        <td><%= wall.name %></td>
+        <td><%= wall.column %></td>
+        <td><%= wall.service_class %></td>
+        <td><%= link_to 'Show', wall %></td>
+        <td><%= link_to 'Edit', edit_wall_path(wall) %></td>
+        <td><%= link_to 'Destroy', wall, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wall', new_wall_path %>

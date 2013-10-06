@@ -1,4 +1,6 @@
 Walltracker::Application.routes.draw do
+  resources :walls
+
   resources :columns
 
   resources :service_classes
