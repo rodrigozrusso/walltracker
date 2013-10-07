@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131005233242) do
+ActiveRecord::Schema.define(version: 20131006012248) do
 
   create_table "cards", force: true do |t|
     t.string   "title"
@@ -65,5 +65,16 @@ ActiveRecord::Schema.define(version: 20131005233242) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "walls", force: true do |t|
+    t.string   "name"
+    t.integer  "column_id"
+    t.integer  "service_class_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "walls", ["column_id"], name: "index_walls_on_column_id", using: :btree
+  add_index "walls", ["service_class_id"], name: "index_walls_on_service_class_id", using: :btree
 
 end
